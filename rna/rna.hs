@@ -1,5 +1,6 @@
 import Data.Char
 
+rna = map (\x -> if x == 'T' then 'U' else x)
+
 main = do
-    contents <- getContents
-    putStr (map (\x -> if x == 'T' then 'U' else x) contents)
+    interact rna

@@ -7,5 +7,4 @@ complement 'T' = 'A'
 complement  x  =  x
 
 main = do
-    contents <- getContents
-    putStr ((map complement (reverse contents)) ++ "\n")
+    interact (map complement . reverse)
